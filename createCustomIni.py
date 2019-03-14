@@ -107,8 +107,13 @@ RESOURCE_MAP = [
         ],
         'default_mods': [
             'SeventySix - 00UpdateMain.ba2',
+            'SeventySix - 01UpdateMain.ba2',
             'SeventySix - 00UpdateStream.ba2',
-            'SeventySix - 00UpdateTextures.ba2'
+            'SeventySix - 01UpdateStream.ba2',
+            'SeventySix - 00UpdateTextures.ba2',
+            'SeventySix - 01UpdateTextures.ba2',
+            'SeventySix - MeshesExtra.ba2',
+            'SeventySix - GeneratedMeshes.ba2'
             ],
         'found_mods': []
     },
