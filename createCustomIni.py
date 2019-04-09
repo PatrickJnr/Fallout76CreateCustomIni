@@ -117,6 +117,9 @@ RESOURCE_MAP = [
             'SeventySix - 02UpdateMain.ba2',
             'SeventySix - 02UpdateStream.ba2',
             'SeventySix - 02UpdateTextures.ba2'
+            'SeventySix - 03UpdateMain.ba2',
+            'SeventySix - 03UpdateStream.ba2',
+            'SeventySix - 03UpdateTextures.ba2'
             ],
         'found_mods': []
     },
