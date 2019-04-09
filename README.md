@@ -20,3 +20,6 @@ Simple script to create a Fallout76Custom.ini for .ba2 mods installed
 ## Info
 I don't normally do python.. or windows... so sorry...
 Um, Script compiled with pyinstaller...
+
+## GrimTech
+I just update this from time to time to be updated along side Fallout 76
