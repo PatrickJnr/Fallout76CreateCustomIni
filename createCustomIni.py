@@ -106,6 +106,7 @@ RESOURCE_MAP = [
             'ChatMod.ba2',
         ],
         'default_mods': [
+		
             'SeventySix - 00UpdateMain.ba2',
             'SeventySix - 01UpdateMain.ba2',
             'SeventySix - 00UpdateStream.ba2',
@@ -120,6 +121,9 @@ RESOURCE_MAP = [
             'SeventySix - 03UpdateMain.ba2',
             'SeventySix - 03UpdateStream.ba2',
             'SeventySix - 03UpdateTextures.ba2'
+			'SeventySix - 04UpdateMain.ba2',
+            'SeventySix - 04UpdateStream.ba2',
+            'SeventySix - 04UpdateTextures.ba2'
             ],
         'found_mods': []
     },
