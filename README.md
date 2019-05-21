@@ -1,5 +1,10 @@
+![](https://staticdelivery.nexusmods.com/mods/2590/images/314/314-1558456148-714359290.png)
+
 # Fallout76CreateCustomIni
 Simple script to create a Fallout76Custom.ini for .ba2 mods installed
+
+## GrimTech
+I just update this from time to time to be updated along side Fallout 76 - <a href="https://www.nexusmods.com/fallout76/mods/314" target="_blank">Nexus</a>
 
 ## Instructions
   * Make a backup of your current Fallout76Custom.ini if you have one
@@ -20,6 +25,3 @@ Simple script to create a Fallout76Custom.ini for .ba2 mods installed
 ## Info
 I don't normally do python.. or windows... so sorry...
 Um, Script compiled with pyinstaller...
-
-## GrimTech
-I just update this from time to time to be updated along side Fallout 76
