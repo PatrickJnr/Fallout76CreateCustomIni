@@ -47,6 +47,9 @@ RESOURCE_MAP = [
             'IconTag.ba2',
             'IconSortingRatmonkeys.ba2',
             'MMM - Country Roads.ba2',
+			'ImpUlt.ba2',
+			'ImpUlt.ba2',
+			'Quizzless Apalachia.ba2'
             ],
         'default_mods': [
             'SeventySix - Interface.ba2',
@@ -59,6 +62,8 @@ RESOURCE_MAP = [
     {
         'filename': 'sResourceArchiveList2',
         'mods': [
+			'PerkLoadoutManager.ba2',
+			'IUMesh.ba2',
             'ShowHealth.ba2',
             'MoreWhereThatCameFrom.ba2',
             'Prismatic_Lasers_76_Lightblue.ba2',
@@ -69,11 +74,17 @@ RESOURCE_MAP = [
             'nootnoot.ba2',
             'MenuMusicReplacer.ba2',
             'BullBarrel.ba2',
+			'EVB76NevernudeFemale - Meshes.ba2',
+			'EVB76NevernudeFemale - Textures.ba2',
+			'EVB76NevernudeMale - Meshes.ba2',
+			'EVB76NevernudeMale - Textures.ba2',
 			'EVB76 - Meshes.ba2',
 			'EVB76 - Textures.ba2',
+			'EVB76Nevernude - Meshes.ba2',
+			'EVB76Nevernude - Textures.ba2',
 			'BoxerShorts.ba2',
 			'MaleUnderwear.ba2',
-			'FemaleUnderwear.ba2',
+			'FemaleUnderwear.ba2'
             ],
         'default_mods': [
             'SeventySix - Animations.ba2',
@@ -111,29 +122,6 @@ RESOURCE_MAP = [
             'ChatMod.ba2',
         ],
         'default_mods': [
-			'SeventySix - 00UpdateMain.ba2',
-			'SeventySix - 01UpdateMain.ba2',
-			'SeventySix - 00UpdateStream.ba2',
-			'SeventySix - 01UpdateStream.ba2',
-			'SeventySix - 00UpdateTextures.ba2',
-			'SeventySix - 01UpdateTextures.ba2',
-			'SeventySix - MeshesExtra.ba2',
-			'SeventySix - 02UpdateMain.ba2',
-			'SeventySix - 03UpdateMain.ba2',
-			'SeventySix - 04UpdateMain.ba2',
-			'SeventySix - 02UpdateStream.ba2',
-			'SeventySix - 03UpdateStream.ba2',
-			'SeventySix - 04UpdateStream.ba2',
-			'SeventySix - 02UpdateTextures.ba2',
-			'SeventySix - 03UpdateTextures.ba2',
-			'SeventySix - 04UpdateTextures.ba2',
-			'SeventySix - GeneratedMeshes.ba2',
-			'SeventySix - StaticMeshes.ba2',
-			'SeventySix - 05UpdateMain.ba2',
-			'SeventySix - 06UpdateMain.ba2',
-			'SeventySix - 05UpdateStream.ba2',
-			'SeventySix - 05UpdateTextures.ba2',
-			'SeventySix - 06UpdateTextures.ba2'
             ],
         'found_mods': []
     },
