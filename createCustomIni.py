@@ -64,7 +64,6 @@ RESOURCE_MAP = [
         'mods': [
 			'PerkLoadoutManager.ba2',
 			'IUMesh.ba2',
-            'ShowHealth.ba2',
             'MoreWhereThatCameFrom.ba2',
             'Prismatic_Lasers_76_Lightblue.ba2',
             'OptimizedSonar.ba2',
@@ -89,7 +88,9 @@ RESOURCE_MAP = [
         'default_mods': [
             'SeventySix - Animations.ba2',
             'SeventySix - EnlightenInteriors.ba2',
-            'SeventySix - GeneratedTextures.ba2',
+            'SeventySix - GeneratedTextures01.ba2',
+            'SeventySix - GeneratedTextures02.ba2',
+            'SeventySix - WorkshopIcons.ba2',
             'SeventySix - EnlightenExteriors01.ba2',
             'SeventySix - EnlightenExteriors02.ba2'
             ],
@@ -111,7 +112,9 @@ RESOURCE_MAP = [
             'SeventySix - Textures03.ba2',
             'SeventySix - Textures04.ba2',
             'SeventySix - Textures05.ba2',
-            'SeventySix - Textures06.ba2'
+            'SeventySix - Textures06.ba2',
+            'SeventySix - Textures07.ba2',
+            'SeventySix - Textures08.ba2'
             ],
         'found_mods': []
     },
@@ -120,8 +123,12 @@ RESOURCE_MAP = [
         'mods': [
             'PerkLoadoutManager.ba2',
             'ChatMod.ba2',
+            'ShowHealthReRedux.ba2',
+            'ShowHealth.ba2',
+            'CompatibleShowHealthRedux.ba2'
         ],
         'default_mods': [
+        'SeventySix - StaticMeshes.ba2'
             ],
         'found_mods': []
     },
