@@ -12,6 +12,14 @@ This tool scans your Fallout 76 data directory and creates a properly formatted 
 
 ## Quick Start
 
+### GUI Version (Recommended for Beginners)
+1. **Backup** your existing `Fallout76Custom.ini` (if you have one)
+2. **Copy** `createCustomIniGUI.py` to your `Fallout76\Data` directory
+3. **Run**: `py createCustomIniGUI.py`
+4. **Use the interface** to browse folders, scan mods, and create your INI
+5. **Verify** the generated file using the "Open Output Folder" button
+
+### CLI Version (For Advanced Users)
 1. **Backup** your existing `Fallout76Custom.ini` (if you have one)
 2. **Copy** `createCustomIni.py` or `createCustomIni.exe` to your `Fallout76\Data` directory
 3. **Run** the script:
@@ -19,7 +27,28 @@ This tool scans your Fallout 76 data directory and creates a properly formatted 
    - Executable: `createCustomIni.exe`
 4. **Verify** the generated `Fallout76Custom.ini` in your Documents folder
 
-The script automatically detects your Fallout 76 directory, including OneDrive locations.
+Both versions automatically detect your Fallout 76 directory, including OneDrive locations.
+
+## Versions Available
+
+### GUI Version (`createCustomIniGUI.py`) - NEW!
+Perfect for users who prefer a graphical interface:
+- **Visual Interface**: Browse folders with buttons, no typing needed
+- **Mod Preview**: See exactly which mods will be included before creating
+- **Real-time Validation**: Visual indicators show if paths are valid
+- **Dark Mode**: Toggle between light and dark themes
+- **Settings Memory**: Saves your preferences for next time
+- **Drag & Drop**: Drag folders directly onto input fields (optional)
+- **One-Click Access**: Open output folder button after creation
+
+See [GUI_README.md](GUI_README.md) for detailed GUI documentation.
+
+### CLI Version (`createCustomIni.py`)
+Traditional command-line interface for power users:
+- **Fast Execution**: Quick command-line operation
+- **Scriptable**: Easy to integrate into batch files or automation
+- **Lightweight**: No GUI dependencies
+- **Full Control**: All options available via command-line flags
 
 ## Key Features
 
@@ -70,27 +99,41 @@ Automatically categorizes mods into the correct INI sections:
 
 ## Usage Examples
 
-### Basic Usage
+### GUI Version
+```bash
+# Launch the GUI
+py createCustomIniGUI.py
+
+# Then use the interface to:
+# 1. Browse to your data folder
+# 2. Click "Scan Mods" to preview
+# 3. Click "Create Custom INI"
+# 4. Click "Open Output Folder" to view result
+```
+
+### CLI Version
+
+#### Basic Usage
 ```bash
 py createCustomIni.py
 ```
 
-### Custom Data Folder
+#### Custom Data Folder
 ```bash
 py createCustomIni.py --datafolder "C:\Games\Fallout76\Data"
 ```
 
-### Custom INI Location
+#### Custom INI Location
 ```bash
 py createCustomIni.py --inifolder "D:\MyConfigs"
 ```
 
-### Run as Administrator
+#### Run as Administrator
 ```bash
 py createCustomIni.py --runasadmin
 ```
 
-### Import Existing Settings
+#### Import Existing Settings
 ```bash
 py createCustomIni.py --copyinicontents "backup.ini"
 ```
@@ -122,10 +165,29 @@ Check that you have write permissions to your Documents folder and that the path
 
 ## Technical Details
 
+### CLI Version
 - **Language**: Python 3
 - **Encoding**: UTF-8 (supports international characters)
 - **Compiled Version**: Built with PyInstaller for standalone execution
-- **Platform**: Windows
+- **Platform**: Windows (primary), cross-platform compatible
+
+### GUI Version
+- **Language**: Python 3 with tkinter
+- **Dependencies**: 
+  - tkinter (included with Python)
+  - tkinterdnd2 (optional, for drag & drop)
+- **Settings Storage**: JSON file (`createCustomIni_settings.json`)
+- **Platform**: Cross-platform (Windows, macOS, Linux)
+
+## Installation
+
+### Basic (Both Versions)
+No installation needed - Python 3 is the only requirement.
+
+### GUI with Drag & Drop (Optional)
+```bash
+pip install tkinterdnd2
+```
 
 ## Notes
 
@@ -133,6 +195,15 @@ Check that you have write permissions to your Documents folder and that the path
 - Mods are automatically sorted with `HUDModLoader.ba2` placed last when present
 - The tool creates necessary directories if they don't exist
 - Console output shows progress and confirms successful creation
+
+## Files in This Repository
+
+- `createCustomIni.py` - Original CLI version
+- `createCustomIniGUI.py` - New GUI version with enhanced features
+- `GUI_README.md` - Detailed documentation for GUI version
+- `requirements-gui.txt` - Optional dependencies for GUI
+- `README.md` - This file
+- `changelog.md` - Version history and changes
 
 ## Contributing
 

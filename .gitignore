@@ -7,3 +7,4 @@ build
 *.omod
 *.fomod
 *.exe
+createCustomIni_settings.json

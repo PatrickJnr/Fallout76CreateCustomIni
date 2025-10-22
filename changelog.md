@@ -4,7 +4,36 @@ All notable changes to Fallout76CreateCustomIni are documented here.
 
 ---
 
-## [Latest] - 2025-10-23 - Documentation Overhaul
+## [Latest] - 2025-10-23 - GUI Version Release
+
+### Added
+- **Complete GUI Application** (`createCustomIniGUI.py`)
+  - User-friendly graphical interface for non-CLI users
+  - Browse buttons for easy folder/file selection
+  - Real-time path validation with visual indicators (✓/✗)
+  - Mod scanning and preview functionality
+  - Threading to prevent GUI freezing during operations
+
+- **Enhanced GUI Features**
+  - **Mod Preview Tree**: Hierarchical view showing which mods go in which INI section
+  - **Real-time Mod Counter**: Live count of detected .ba2 mods
+  - **Dark Mode Toggle**: Switch between light and dark themes
+  - **Settings Persistence**: Save/load folder paths and preferences to JSON file
+  - **Drag & Drop Support**: Drag folders directly onto input fields (requires tkinterdnd2)
+  - **Open Output Folder**: Quick access button to created INI file location
+  - **Tabbed Interface**: Separate tabs for "Mod Preview" and "Output Log"
+  - **Auto-detection**: Same smart path detection as CLI version
+
+### Technical Details
+- Built with tkinter (included with Python)
+- Optional tkinterdnd2 for drag and drop (graceful fallback if not installed)
+- Settings stored in `createCustomIni_settings.json`
+- Threaded operations for responsive UI
+- Cross-platform compatible (Windows, macOS, Linux)
+
+---
+
+## [Previous] - 2025-10-23 - Documentation Overhaul
 
 ### Changed
 - **Complete README.md Rewrite**
