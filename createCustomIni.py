@@ -165,7 +165,7 @@ RESOURCE_MAP = [
 ]
 # The array index from the RESOURCE_MAP for sResourceArchive2List
 SR_2LIST_INDEX = 3
-MOD_TO_PLACE_LAST = "InventOmaticStash-UO.ba2"
+MOD_TO_PLACE_LAST = "HUDModLoader.ba2"
 
 # Re-run the program with admin rights if needed
 if is_admin:
