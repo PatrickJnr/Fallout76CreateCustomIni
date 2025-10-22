@@ -1,55 +1,117 @@
 # Changelog
 
-## Latest Updates - Smart Path Detection & Robustness Improvements
-
-### Path Detection Enhancement
-- **Smart Directory Finding**: Added `find_fallout76_directory()` function that automatically detects Fallout 76 directory location
-- **OneDrive Support**: Now supports multiple OneDrive configurations:
-  - OneDrive Personal (`OneDrive\Documents\My Games\Fallout 76`)
-  - OneDrive Business (`OneDrive - Business\Documents\My Games\Fallout 76`) 
-  - OneDrive with redirected Documents folder
-  - Standard Documents location as fallback
-- **User Feedback**: Added console output showing which directory was found/used
-
-### Error Handling & Robustness
-- **Input Validation**: Added validation to check if data folder exists before processing
-- **Permission Handling**: Better error messages for permission issues with suggestion to use `--runasadmin`
-- **UTF-8 Encoding**: Explicit UTF-8 encoding for file operations to handle international characters
-- **Import File Validation**: Check if import file exists before attempting to read it
-- **Graceful Error Handling**: Comprehensive try-catch blocks with informative error messages
-
-### User Experience Improvements
-- **Progress Feedback**: Added console output showing scan progress and file creation status
-- **Better Error Messages**: More descriptive error messages with actionable suggestions
-- **Success Confirmation**: Clear confirmation when ini file is successfully created
+All notable changes to Fallout76CreateCustomIni are documented here.
 
 ---
 
-## Previous Updates - Formatting and Styling
-- Reformatted docstring for consistency.
-- Replaced single quotes with double quotes for string literals.
-- Improved readability by reorganizing the argument parser setup.
+## [Latest] - 2025-10-23 - Documentation Overhaul
 
-## Argument Parsing
-- Renamed the parser variable to lowercase (`parser`).
-- Enhanced descriptions and help texts for the arguments.
-- Reformatted the addition of arguments for better readability.
+### Changed
+- **Complete README.md Rewrite**
+  - Restructured with clearer sections and professional layout
+  - Added comprehensive "Quick Start" guide for new users
+  - Expanded "Key Features" section with detailed subsections
+  - Added "Usage Examples" with practical command-line scenarios
+  - New "How It Works" section explaining the process flow
+  - Enhanced "Troubleshooting" section with common issues and solutions
+  - Added "Technical Details" section for developers
+  - Improved formatting with better use of code blocks and lists
+  - More user-friendly language and organization throughout
 
-## Removed Unused Imports
-- Removed `errno` and `walk` imports which were not used.
+---
 
-## Variable Naming
-- Changed variable names to follow a more consistent style (e.g., `IMPORT_INI` to `import_ini`).
+## [Previous] - 2025 - Major Overhaul: Smart Detection & Robustness
 
-## Logic and Loop Adjustments
-- Reorganized the loop structure to enhance readability.
-- Simplified list comprehensions and conditions.
-- Used a more pythonic way to concatenate strings.
+### Added
+- **Smart Path Detection System**
+  - `find_fallout76_directory()` function automatically locates Fallout 76 directory
+  - Multi-location search algorithm checks common installation paths
+  - Console feedback showing which directory was detected/used
 
-## File Handling
-- Improved file opening logic using `with open` context managers.
-- Enhanced the logic for writing to the INI file, ensuring no leading commas.
+- **Comprehensive OneDrive Support**
+  - OneDrive Personal (`OneDrive\Documents\My Games\Fallout 76`)
+  - OneDrive Business (`OneDrive - Business\Documents\My Games\Fallout 76`)
+  - OneDrive with redirected Documents folder
+  - Alternative OneDrive path structures
+  - Automatic fallback to standard Documents location
 
-## General Code Cleanup
-- Removed redundant lines and comments.
-- Consolidated code blocks where possible for better efficiency.
+- **Enhanced Error Handling**
+  - Data folder existence validation before processing
+  - Permission error detection with `--runasadmin` suggestion
+  - Import file validation before reading
+  - Comprehensive try-catch blocks with descriptive messages
+  - Graceful error handling with appropriate exit codes
+
+- **Improved User Experience**
+  - Progress feedback during mod scanning
+  - File creation status confirmation
+  - Success messages with file paths
+  - Warning messages for missing import files
+  - Clear, actionable error messages
+
+### Changed
+- **File Encoding**: Explicit UTF-8 encoding for all file operations
+  - Supports international characters in mod names
+  - Prevents encoding-related crashes
+
+- **Error Messages**: More descriptive and actionable
+  - Specific suggestions for common issues
+  - Clear indication of what went wrong and how to fix it
+
+### Fixed
+- Permission issues when writing to protected directories
+- Crashes when data folder doesn't exist
+- Encoding errors with non-ASCII characters in mod names
+- Missing import file handling
+
+---
+
+## [Previous] - Code Quality & Formatting Improvements
+
+### Changed
+- **Code Style Standardization**
+  - Reformatted docstrings for consistency
+  - Replaced single quotes with double quotes throughout
+  - Improved overall code readability
+
+- **Argument Parser Refactoring**
+  - Renamed parser variable to lowercase for PEP 8 compliance
+  - Enhanced argument descriptions and help texts
+  - Reorganized argument definitions for better readability
+
+- **Variable Naming Conventions**
+  - Consistent naming style across the codebase
+  - Changed `IMPORT_INI` to `import_ini` for consistency
+  - More descriptive variable names
+
+- **Loop and Logic Optimization**
+  - Reorganized loop structures for clarity
+  - Simplified list comprehensions
+  - More pythonic string concatenation methods
+
+- **File Handling Improvements**
+  - Consistent use of `with open` context managers
+  - Enhanced INI file writing logic
+  - Removed leading comma issues in generated output
+
+### Removed
+- Unused imports (`errno`, `walk`)
+- Redundant code blocks and comments
+- Unnecessary complexity in file operations
+
+### Technical Debt
+- Consolidated code blocks for better efficiency
+- Improved maintainability through cleaner structure
+- Better separation of concerns
+
+---
+
+## Format
+
+This changelog follows [Keep a Changelog](https://keepachangelog.com/) principles:
+- **Added** for new features
+- **Changed** for changes in existing functionality
+- **Deprecated** for soon-to-be removed features
+- **Removed** for now removed features
+- **Fixed** for bug fixes
+- **Security** for vulnerability fixes
