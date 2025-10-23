@@ -1,0 +1,2 @@
+# Drag and drop support for the GUI Version
+tkinterdnd2>=0.3.0
